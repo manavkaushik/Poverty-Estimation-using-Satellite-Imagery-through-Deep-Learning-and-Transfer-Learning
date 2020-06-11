@@ -1,25 +1,23 @@
 # Poverty Estimation using Satellite Imagery through Deep Learning and Transfer Learning
 
+Active learning is a special kind of learning  where  the algorithm can interactively query an oracle to label data points based on the algorithm’s preferences. <br/>
+This repository aims to target all the major concepts in Active Learning with help of a real life problem of **Handwritten Digits Labelling**. The concepts covered are as follows: <br/><br/>
+  ○ Distribution of data: _Train, Test, Unlabelled_ <br/><br/>
+  ○ Uncertainty Sampling using: <br/>
+    - Least Confidence<br/>
+    - Margin<br/>
+    - Entropy<br/><br/>
+  ○ Query by Committee (QBC)/ Disagreement Sampling using:<br/>
+    - Vote Entropy<br/>
+    - KL Divergence<br/><br/>
+  ○ Version Space and its minimization<br/><br/>
+  ○ Comparisons:<br/>
+    - All Sampling Techniques<br/>
+    - Pool Based Scenario vs Stream Based Scanerio<br/>
+    - Active Learning vs Random (Traditional) Learning<br/><br/>
+  ○ How good is clustering for this task?<br/><br/>
 
-
-The flow of the project goes down in the following way:<br/>
-
-Data Collection: <br/>
-  ○ Collect nighttime light intensity data from the National Oceanic and
-    Atmospheric Administration (NOAA)<br/>
-  ○ Download economic data from the Demographic and Health Surveys
-    (DHS Data)<br/>
-  ○ Download day-time satellite of the region of interest from Google
-    Static Maps<br/><br/>
-Setup a Transfer Learning Model:<br/>
-  ○ Prepare a VGG16 model for transfer learning<br/>
-  ○ Use ImageNet dataset for training weights with VGG16 model to
-    transfer knowledge to predict nightlight intensity.<br/><br/>
-Poverty Estimation using Deep Learning and Transfer Learning:<br/>
-  ○ Fine-tune the CNN model using satellite daytime images and
-    nighttime light intensity data through transfer learning<br/>
-  ○ Use the features that the model has learned from the nighttime light
-    intensity classification task to map poverty in the region of interest.<br/><br/>
-
-For a detail explanation of the whole project please find the below attached link for the project report<br/>
-[Project Report](https://drive.google.com/file/d/1UbffLKdWzYwtPKAT17F4lN2liDuvqOQ0/view?usp=sharing)
+Dataset used: **Digits Dataset** (sklearn)<br/>
+  ○ Number of Samples: 1797<br/>
+  ○ Number of Features: 64<br/>
+  ○ Number of Classes: 10<br/><br/>
